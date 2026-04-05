@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Моя игра</title>
+</head>
+<body>
+
+<h1>Золото: <span id="gold">0</span></h1>
+
+<button onclick="mineGold()">Добыть золото</button>
+
+<script>
+let gold = 0;
+
+function mineGold() {
+    gold = gold + 1;
+    document.getElementById("gold").innerText = gold;
+}
+</script>
+
+</body>
+</html>то
