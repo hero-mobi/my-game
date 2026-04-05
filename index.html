@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Моя игра</title>
+    <title>ГЕРОИ</title>
 </head>
 <body>
 
@@ -12,11 +12,23 @@
 <script>
 let gold = 0;
 
+// Кнопка
 function mineGold() {
     gold = gold + 1;
+    updateGold();
+}
+
+// Автодобыча каждую секунду
+setInterval(function() {
+    gold = gold + 1;
+    updateGold();
+}, 1000);
+
+// Обновление текста
+function updateGold() {
     document.getElementById("gold").innerText = gold;
 }
 </script>
 
 </body>
-</html>то
+</html>
